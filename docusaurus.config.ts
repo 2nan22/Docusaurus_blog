@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: '2nan',
   tagline: '수리중입니다 조금만 기다려주세요',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon-16x16.png',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
@@ -68,19 +68,19 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Every Second Counts',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/everysecondcounts.png',
       },
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'portfolioSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Portfolio',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/blog', label: 'Tech', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -131,7 +131,8 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.` +
+        `<br />Icons by <a href="https://www.flaticon.com/kr/free-icon/time-management_2348853?term=%EC%8B%9C%EA%B3%84&page=5&position=73&origin=search&related_id=2348853" target="_blank" rel="noopener noreferrer">juicy_fish - Flaticon</a>`,
     },
     prism: {
       theme: prismThemes.github,

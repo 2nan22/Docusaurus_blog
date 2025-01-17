@@ -3,8 +3,8 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
+import BlogActivityHeatmap from '@site/src/components/BlogActivityHeatmap';
 
 import styles from './index.module.css';
 
@@ -21,7 +21,12 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Portfolio
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="/blog">
+            Tech Blog
           </Link>
         </div>
       </div>
@@ -29,15 +34,50 @@ function HomepageHeader() {
   );
 }
 
+function BlogActivity() {
+  return (
+    <section className={styles.blogActivity}>
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <Heading as="h2" className={styles.activityTitle}>
+              Blog Activity
+            </Heading>
+            <BlogActivityHeatmap />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function RecentPosts() {
+  return (
+    <section className={styles.recentPosts}>
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <Heading as="h2" className={styles.sectionTitle}>
+              Recent Posts
+            </Heading>
+            {/* 최근 포스트 목록 컴포넌트 추가 예정 */}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={siteConfig.title}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <BlogActivity />
+        <RecentPosts />
       </main>
     </Layout>
   );

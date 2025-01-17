@@ -1,0 +1,20 @@
+/* src/css/custom.css */
+.blog-activity-heatmap {
+    display: grid;
+    grid-template-columns: repeat(53, 1fr);
+    gap: 1px;
+    padding: 1rem;
+    background-color: var(--ifm-background-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heatmap-cell {
+    aspect-ratio: 1;
+    border-radius: 2px;
+    transition: transform 0.2s;
+  }
+  
+  .heatmap-cell:hover {
+    transform: scale(1.2);
+  }

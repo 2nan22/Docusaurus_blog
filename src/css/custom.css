@@ -28,3 +28,40 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* src/css/custom.css */
+.blog-activity-heatmap {
+  margin: 2rem 0;
+  padding: 1rem;
+  background: var(--ifm-background-surface-color);
+  border-radius: 8px;
+}
+
+.heatmap-wrapper {
+  display: grid;
+  grid-template-columns: repeat(53, 1fr);
+  gap: 3px;
+  justify-content: center;
+}
+
+.heatmap-cell {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  transition: transform 0.2s;
+}
+
+.heatmap-cell:hover {
+  transform: scale(1.5);
+}
+
+@media (max-width: 768px) {
+  .heatmap-wrapper {
+    grid-template-columns: repeat(26, 1fr);
+  }
+  
+  .heatmap-cell {
+    width: 8px;
+    height: 8px;
+  }
+}

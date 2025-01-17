@@ -1,8 +1,4 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
+/* src/pages/index.module.css */
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
@@ -10,14 +6,30 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+}
+
+.blogActivity {
+  padding: 2rem 0;
+  background-color: var(--ifm-background-color);
+}
+
+.recentPosts {
+  padding: 2rem 0;
+}
+
+.activityTitle,
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
 }

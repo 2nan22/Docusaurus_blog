@@ -1,41 +1,39 @@
-# Website
+# Docusaurus 기술 블로그 만들기
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-### Installation
-
-```
-$ yarn
-```
-
-### Local Development
+### 환경설정
 
 ```
-$ yarn start
+- Docusaurus 3.7 
+- node.js 설치 (18.0 이상 버전)
+- Git
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
+### Git 설정
 ```
-$ yarn build
+git init
 ```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
 ```
-$ USE_SSH=true yarn deploy
+git remote add origin ~
 ```
-
-Not using SSH:
-
 ```
-$ GIT_USER=<Your GitHub username> yarn deploy
+git config --global --user.name
+```
+```
+git config --global --user.email
+```
+```
+git pull origin main
+```
+```
+cd ./Docusaurus_blog
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+### Node js 세팅
+```
+npm install
+```
+```
+npm run start
+```

@@ -5,20 +5,20 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: '2nan',
-  tagline: '수리중입니다 조금만 기다려주세요',
+  title: 'Every Second Counts',
+  tagline: '매 순간은 소중하기에',
   favicon: 'img/favicon-16x16.png',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://everysecondcounts.blog',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: '2nan', // Usually your GitHub org/user name.
+  projectName: '2nan', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -28,7 +28,7 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'ko'],
   },
 
   presets: [
@@ -40,7 +40,11 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/2nan22/Docusaurus_blog',  
+          tagsBasePath: 'tags',
+          // 메타데이터 관련 설정 추가
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
         },
         blog: {
           showReadingTime: true,
@@ -75,14 +79,14 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'portfolioSidebar',
+          type: 'docSidebar',  // 이 부분이 중요합니다
+          sidebarId: 'techblogSidebar',  // sidebars.ts에 정의한 사이드바 ID
           position: 'left',
-          label: 'Portfolio',
+          label: 'Contents',
         },
-        {to: '/blog', label: 'Tech', position: 'left'},
+        {to: '/blog', label: 'I am', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/your-github-username',
           label: 'GitHub',
           position: 'right',
         },

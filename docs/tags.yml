@@ -1,0 +1,14 @@
+python:
+  label: Python
+  permalink: /Python
+  description: Python description
+
+Docusaurus:
+  label: Docusaurus
+  permalink: /projects/Docusaurus로 블로그 개설하기
+  description: Docusaurus tag description
+
+project:
+  label: project
+  permalink: /projects
+  description: Docusaurus tag description

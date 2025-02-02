@@ -43,7 +43,7 @@ const config: Config = {
             'https://github.com/2nan22/Docusaurus_blog',  
           tagsBasePath: 'tags',
           // 메타데이터 관련 설정 추가
-          showLastUpdateTime: true,
+          // showLastUpdateTime: true,
           showLastUpdateAuthor: true,
         },
         blog: {
@@ -55,7 +55,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/2nan22/Docusaurus_blog',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -86,7 +86,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'I am', position: 'left'},
         {
-          href: 'https://github.com/your-github-username',
+          href: 'https://github.com/2nan22/Docusaurus_blog',
           label: 'GitHub',
           position: 'right',
         },

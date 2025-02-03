@@ -1,14 +1,22 @@
-python:
+Python:
   label: Python
-  permalink: /Python
-  description: Python description
+  # permalink: /Python
+  description: Python 관련 글
 
 Docusaurus:
   label: Docusaurus
-  permalink: /projects/Docusaurus로 블로그 개설하기
+  # permalink: /projects/Docusaurus로 블로그 개설하기
   description: Docusaurus tag description
 
 project:
   label: project
-  permalink: /projects
-  description: Docusaurus tag description
+  # permalink: /projects
+  description: 프로젝트 관련 글
+
+Windows:
+  label: Windows
+  description: Windows 관련 글
+
+가상환경:
+  label: 가상환경
+  description: 가상환경 관련 글

@@ -90,7 +90,30 @@ const config: Config = {
           label: 'GitHub',
           position: 'right',
         },
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },      
       ],
+    },
+    metadata: [
+      
+    ],
+    i18n: {
+      defaultLocale: 'en',
+      locales: ['en', 'ko'],
+      localeConfigs: {
+        en: {
+          label: 'English',
+          direction: 'ltr',
+          htmlLang: 'en-US',
+        },
+        ko: {
+          label: '한국어',
+          direction: 'ltr',
+          htmlLang: 'ko-KR',
+        },
+      },
     },
     footer: {
       style: 'dark',
